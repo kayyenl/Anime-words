@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: 0 auto;
+    height: 20%;
+}
+
+.row {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav__container {
+    height: 100%;
+    background-image: url(pokemon_bg.webp);
+    background-repeat: no-repeat;
+}
+
