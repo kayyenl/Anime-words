@@ -49,10 +49,40 @@ nav {
 
 .utility__row {
     height: 50px;
-    background-color: rgb(212, 212, 212);
     border-radius: 10px;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+.getlucky {
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    transition: all 450ms ease;
+    margin-right: 42px;
+}
+
+.button__get-lucky {
+    background-color: #35156c;
+}
+
+.button__start-your-day {
+    background-color: #3b1a02;
+}
+
+.button__get-lucky:hover {
+    background-color: #5914d1;
+}
+
+.button__start-your-day:hover {
+    background-color: #6F4E37;
+    cursor: pointer;
+}
+
+.utility__get-lucky,
+.utility__start-your-day {
+    font-weight: 600;
 }
 
 .posts {
