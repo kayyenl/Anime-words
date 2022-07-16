@@ -1,12 +1,16 @@
+
+/* general matters */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 
 }
 
 nav {
-    margin: 0 auto;
-    height: 20%;
+    margin-top: 15px;
+    height: 15%;
 }
 
 .row {
@@ -15,14 +19,28 @@ nav {
     margin: 0 auto;
 }
 
+/* nav section */
+
 .nav__container {
     height: 100%;
     background-image: linear-gradient( 
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.6)
-    ), url(pokemon_bg.webp);
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ), url(animeview_background.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__figure {
+    width: 500px;
+}
+
+.nav__image {
+    width: 100%;
+    filter: 
 }
 
