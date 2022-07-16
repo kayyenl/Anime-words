@@ -99,7 +99,11 @@ nav {
 }
 
 .body__no-quotes--figure {
-    width: 400px;
+    width: 80%;
+}
+
+.body__no-quotes--loading {
+    width: 100%;
 }
 
 .posts__no-quotes {
