@@ -23,18 +23,18 @@ async function generateTen() {
     }).join("")
 }
 
-async function onSearchChange(event) {
-    targetArea.innerHTML = loadingStringGenerator("hideri-anime.gif")
-    const quote = await fetch(`https://animechan.vercel.app/api/quotes/character?name=${event.target.value}`);
-    const quoteJson = await quote.json();
+// async function onSearchChange(event) {
+//     targetArea.innerHTML = loadingStringGenerator("hideri-anime.gif")
+//     const quote = await fetch(`https://animechan.vercel.app/api/quotes/character?name=${event.target.value}`);
+//     const quoteJson = await quote.json();
 
-    targetArea.innerHTML = quoteJson.map(elem => {
-        return `<div class="post__container">
-                    "${elem.quote}"
-                    <span class="char__show">-${elem.character}, from <span class="show__italics">${elem.anime}</span> </span> 
-                </div>`
-    }).join("")
-}
+//     targetArea.innerHTML = quoteJson.map(elem => {
+//         return `<div class="post__container">
+//                     "${elem.quote}"
+//                     <span class="char__show">-${elem.character}, from <span class="show__italics">${elem.anime}</span> </span> 
+//                 </div>`
+//     }).join("")
+// }
 
 function loadingStringGenerator(gif) {
     return `<div class="posts__no-quotes">
