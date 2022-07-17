@@ -10,12 +10,13 @@ async function generateOne() {
     </div>`
 }
 
-async function generateTen() {
+async function generateThree() {
     targetArea.innerHTML = loadingStringGenerator("anime-run-gif-3.webp")
     const quote = await fetch('https://animechan.vercel.app/api/quotes');
     const quoteJson = await quote.json();
+    const quoteJsonThree = quoteJson.slice(0,3)
 
-    targetArea.innerHTML = quoteJson.map(elem => {
+    targetArea.innerHTML = quoteJsonThree.map(elem => {
         return `<div class="post__container">
                     "${elem.quote}"
                     <span class="char__show">-${elem.character}, from <span class="show__italics">${elem.anime}</span> </span> 
