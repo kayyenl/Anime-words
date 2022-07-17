@@ -18,6 +18,19 @@ input {
     border: 2px solid green;
 }
 
+footer {
+    text-align: center;
+    background-image: linear-gradient( 
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    ), url(animeview_background.webp);
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 20px;
+}
+
 .row {
     max-width: 1200px;
     width: 100%;
@@ -125,6 +138,7 @@ input {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 50vh
 }
 
 .posts__no-quotes--img {
@@ -162,5 +176,21 @@ input {
 @media (max-width: 768px) {
     .nav__figure {
         width: 300px;
+    }
+
+    nav,
+    footer {
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .utility__row {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .getlucky {
+        margin: 16px;
+        text-align: center;
     }
 }
