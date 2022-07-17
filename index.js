@@ -6,7 +6,7 @@ async function generateOne() {
     const elem = await quote.json();
     targetArea.innerHTML = `<div class="post__container">
     "${elem.quote}"
-    <span class="char__show">-${elem.character}, from <span class="show__italics">${elem.anime}</span> </span>
+    <span class="char__show">-${elem.character}, from <span class="show__italics">${elem.anime}</span> </span> 
     </div>`
 }
 
@@ -19,7 +19,7 @@ async function generateTen() {
     targetArea.innerHTML = quoteJson.map(elem => {
         return `<div class="post__container">
                     "${elem.quote}"
-                    <span class="char__show">-${elem.character}, from <span class="show__italics">${elem.anime}</span> </span>
+                    <span class="char__show">-${elem.character}, from <span class="show__italics">${elem.anime}</span> </span> 
                 </div>`
     }).join("")
 }
