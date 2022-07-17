@@ -63,17 +63,27 @@ input {
     color: white;
     padding: 12px;
     border-radius: 10px;
-    transition: all 450ms ease;
     margin: 32px;
     cursor: pointer;
+    transition: all 450ms ease;
 }
 
 .button__get-lucky {
     background-color: #35156c;
 }
 
+.button__get-lucky:active {
+    background-color: #35156c;
+    transform: scale(0.7)
+}
+
 .button__start-your-day {
     background-color: #3b1a02;
+}
+
+.button__start-your-day:active {
+    background-color: #3b1a02;
+    transform: scale(0.7)
 }
 
 .button__get-lucky:hover {
