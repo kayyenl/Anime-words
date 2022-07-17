@@ -11,7 +11,7 @@ async function generateOne() {
 }
 
 async function generateTen() {
-    targetArea.innerHTML = loadingStringGenerator("hideri-anime.gif")
+    targetArea.innerHTML = loadingStringGenerator("anime-run-gif-3.webp")
     const quote = await fetch('https://animechan.vercel.app/api/quotes');
     const quoteJson = await quote.json();
 

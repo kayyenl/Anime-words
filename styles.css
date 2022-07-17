@@ -107,7 +107,7 @@ input {
 }
 
 .body__no-quotes--loading {
-    width: 100%;
+    width: 90%;
 }
 
 .posts__no-quotes {
@@ -146,4 +146,11 @@ input {
 
 .show__italics {
     font-style: italic;
+}
+
+
+@media (max-width: 768px) {
+    .nav__figure {
+        width: 300px;
+    }
 }
