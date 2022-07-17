@@ -13,6 +13,11 @@ nav {
     height: 20%;
 }
 
+input {
+    padding: 8px;
+    border: 2px solid green;
+}
+
 .row {
     max-width: 1200px;
     width: 100%;
